@@ -3,86 +3,136 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Brend Çanta Qalereyası</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Cormorant+Garamond:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Brend Çanta Qalereyası | Luxury Boutique</title>
+    <style>
+        /* Bütün dizaynı bura yerləşdirdim ki, style.css problemi olmasın */
+        body { background-color: #0b0c10; color: #c5c6c7; font-family: 'Playfair Display', serif; margin: 0; padding: 0; scroll-behavior: smooth; }
+        .navbar { background: #1f2833; padding: 20px; text-align: center; border-bottom: 2px solid #d4af37; position: sticky; top: 0; z-index: 100; }
+        .navbar a { color: #d4af37; text-decoration: none; margin: 0 15px; font-weight: bold; text-transform: uppercase; font-size: 14px; letter-spacing: 1px; }
+        header { text-align: center; padding: 100px 20px; background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)); color: #f6eaac; border-bottom: 1px solid #1f2833; }
+        header h1 { font-size: 3rem; margin: 0; letter-spacing: 4px; }
+        header .divider { width: 100px; height: 2px; background: #d4af37; margin: 20px auto; }
+        header p { font-size: 1.2rem; font-style: italic; color: #c5c6c7; }
+        .section-title { text-align: center; color: #d4af37; margin: 60px 0 30px; font-size: 2.5rem; text-transform: uppercase; letter-spacing: 5px; }
+        .products-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; padding: 20px; max-width: 1300px; margin: auto; }
+        .product-card { background: #1f2833; border: 1px solid #45a29e; border-radius: 10px; overflow: hidden; text-align: center; transition: 0.4s; padding-bottom: 25px; position: relative; }
+        .product-card:hover { border-color: #d4af37; transform: translateY(-10px); box-shadow: 0 10px 30px rgba(0,0,0,0.5); }
+        .badge { position: absolute; top: 15px; right: 15px; background: #d4af37; color: #0b0c10; padding: 5px 12px; font-size: 12px; font-weight: bold; border-radius: 3px; }
+        .product-card img { width: 100%; height: 320px; object-fit: cover; border-bottom: 1px solid #1f2833; }
+        .product-info h3 { color: #fff; margin: 20px 0 10px; font-size: 1.4rem; letter-spacing: 1px; }
+        .price { color: #d4af37; font-size: 1.3rem; font-weight: bold; margin-bottom: 20px; }
+        .btn-order { background: transparent; color: #d4af37; padding: 12px 25px; text-decoration: none; border: 1px solid #d4af37; border-radius: 5px; font-weight: bold; transition: 0.3s; }
+        .btn-order:hover { background: #d4af37; color: #0b0c10; }
+        footer { text-align: center; padding: 50px; background: #1f2833; border-top: 2px solid #d4af37; margin-top: 80px; }
+    </style>
 </head>
 <body>
 
 <nav class="navbar">
-    <div class="logo">BÇQ</div>
-    <ul>
-        <li><a href="#gucci">Gucci</a></li>
-        <li><a href="#chanel">Chanel</a></li>
-        <li><a href="#prada">Prada</a></li>
-        <li><a href="#hermes">Hermes</a></li>
-    </ul>
+    <a href="#home">Ana Səhifə</a>
+    <a href="#gucci">Gucci</a>
+    <a href="#chanel">Chanel</a>
+    <a href="#prada">Prada</a>
+    <a href="#hermes">Hermès</a>
 </nav>
 
-<header>
-    <h1>Eksklüziv Kolleksiya</h1>
-    <p>Premium Brendlər</p>
+<header id="home">
+    <h1>Eksklüziv Çanta Kolleksiyası</h1>
+    <div class="divider"></div>
+    <p>Zəriflik, keyfiyyət və prestij bir ünvanda</p>
 </header>
 
 <div class="main-content">
-    <section id="gucci" class="products-section">
-        <h2 class="section-title">Gucci</h2>
-        <div class="products-grid">
-            <script>
-                for(let i=1; i<=5; i++) {
-                    document.write(`
-                        <div class="product-card">
-                            <img src="gucci${i}.jpg" onerror="this.src='gucci${i}.webp'" alt="Bag">
-                            <div class="product-info">
-                                <h3>Gucci Model ${i}</h3>
-                                <a href="https://wa.me/12025550123" class="btn-order">Sifariş</a>
-                            </div>
-                        </div>
-                    `);
-                }
-            </script>
-        </div>
-    </section>
 
-    <section id="chanel" class="products-section">
-        <h2 class="section-title">Chanel</h2>
-        <div class="products-grid">
-            <script>
-                for(let i=1; i<=5; i++) {
-                    document.write(`
-                        <div class="product-card">
-                            <img src="chanel${i}.jpg" onerror="this.src='chanel${i}.webp'" alt="Bag">
-                            <div class="product-info">
-                                <h3>Chanel Model ${i}</h3>
-                                <a href="https://wa.me/12025550123" class="btn-order">Sifariş</a>
-                            </div>
+    <h2 id="gucci" class="section-title">Gucci</h2>
+    <div class="products-grid">
+        <script>
+            const gP = [5200, 4800, 6100, 3900, 5500];
+            const gM = ["Marmont Shoulder", "Dionysus GG", "Jackie 1961", "Horsebit 1955", "Ophidia Tote"];
+            for(let i=1; i<=5; i++) {
+                document.write(`
+                    <div class="product-card">
+                        <div class="badge">Eksklüziv</div>
+                        <img src="gucci${i}.jpg" onerror="this.src='gucci${i}.webp'" alt="Gucci">
+                        <div class="product-info">
+                            <h3>${gM[i-1]}</h3>
+                            <p class="price">${gP[i-1]} AZN</p>
+                            <a href="https://wa.me/12025550123" class="btn-order">WhatsApp Sifariş</a>
                         </div>
-                    `);
-                }
-            </script>
-        </div>
-    </section>
+                    </div>
+                `);
+            }
+        </script>
+    </div>
 
-    <section id="hermes" class="products-section">
-        <h2 class="section-title">Hermes</h2>
-        <div class="products-grid">
-            <script>
-                for(let i=1; i<=5; i++) {
-                    document.write(`
-                        <div class="product-card">
-                            <img src="hermes${i}.jpg" onerror="this.src='hermes${i}.webp'" alt="Bag">
-                            <div class="product-info">
-                                <h3>Hermes Model ${i}</h3>
-                                <a href="https://wa.me/12025550123" class="btn-order">Sifariş</a>
-                            </div>
+    <h2 id="chanel" class="section-title">Chanel</h2>
+    <div class="products-grid">
+        <script>
+            const cP = [8500, 9200, 7800, 11000, 8900];
+            const cM = ["Classic Flap Bag", "Chanel 22 Large", "Boy Chanel", "Coco Handle", "Chanel 19"];
+            for(let i=1; i<=5; i++) {
+                document.write(`
+                    <div class="product-card">
+                        <div class="badge">Limitli</div>
+                        <img src="chanel${i}.jpg" onerror="this.src='chanel${i}.webp'" alt="Chanel">
+                        <div class="product-info">
+                            <h3>${cM[i-1]}</h3>
+                            <p class="price">${cP[i-1]} AZN</p>
+                            <a href="https://wa.me/12025550123" class="btn-order">WhatsApp Sifariş</a>
                         </div>
-                    `);
-                }
-            </script>
-        </div>
-    </section>
+                    </div>
+                `);
+            }
+        </script>
+    </div>
+
+    <h2 id="prada" class="section-title">Prada</h2>
+    <div class="products-grid">
+        <script>
+            const pP = [4200, 5600, 3800, 4900, 6200];
+            const pM = ["Prada Galleria", "Re-Edition 2005", "Prada Cleo", "Saffiano Lux", "Prada Moon"];
+            for(let i=1; i<=5; i++) {
+                document.write(`
+                    <div class="product-card">
+                        <div class="badge">Yeni</div>
+                        <img src="prada${i}.jpg" onerror="this.src='prada${i}.webp'" alt="Prada">
+                        <div class="product-info">
+                            <h3>${pM[i-1]}</h3>
+                            <p class="price">${pP[i-1]} AZN</p>
+                            <a href="https://wa.me/12025550123" class="btn-order">WhatsApp Sifariş</a>
+                        </div>
+                    </div>
+                `);
+            }
+        </script>
+    </div>
+
+    <h2 id="hermes" class="section-title">Hermès</h2>
+    <div class="products-grid">
+        <script>
+            const hP = [15800, 18500, 12000, 14200, 25000];
+            const hM = ["Birkin 30 Gold", "Kelly 28 Epsom", "Constance 18", "Evelyne III", "Lindy 26"];
+            for(let i=1; i<=5; i++) {
+                document.write(`
+                    <div class="product-card">
+                        <div class="badge">Premium</div>
+                        <img src="hermes${i}.jpg" onerror="this.src='hermes${i}.webp'" alt="Hermes">
+                        <div class="product-info">
+                            <h3>${hM[i-1]}</h3>
+                            <p class="price">${hP[i-1]} AZN</p>
+                            <a href="https://wa.me/12025550123" class="btn-order">WhatsApp Sifariş</a>
+                        </div>
+                    </div>
+                `);
+            }
+        </script>
+    </div>
+
 </div>
+
+<footer>
+    <p>© 2026 Brend Çanta Qalereyası | Lüks təcrübənin tək ünvanı.</p>
+</footer>
 
 </body>
 </html>
