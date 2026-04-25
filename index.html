@@ -41,13 +41,14 @@
                     document.write(`
                         <div class="product-card">
                             <div class="badge">Gucci</div>
-                            <img src="gucci${i}.jpg" alt="Gucci ${i}">
+                            <picture>
+                                <source srcset="gucci${i}.webp" type="image/webp">
+                                <img src="gucci${i}.jpg" alt="Gucci ${i}">
+                            </picture>
                             <div class="product-info">
                                 <h3>${gucciModels[i-1]}</h3>
                                 <p class="price">${gucciPrices[i-1]} AZN</p>
-                                <a href="https://wa.me/12025550123?text=Salam,%20Gucci%20${gucciModels[i-1]}%20modeli%20ilə%20bağlı%20məlumat%20almaq%20istəyirəm" class="btn-order">
-                                    <i class="fab fa-whatsapp"></i> WhatsApp Sifariş
-                                </a>
+                                <a href="https://wa.me/12025550123?text=Salam,%20Gucci%20${gucciModels[i-1]}%20sifarişi" class="btn-order"><i class="fab fa-whatsapp"></i> WhatsApp Sifariş</a>
                             </div>
                         </div>
                     `);
@@ -66,13 +67,14 @@
                     document.write(`
                         <div class="product-card">
                             <div class="badge">Chanel</div>
-                            <img src="chanel${i}.jpg" alt="Chanel ${i}">
+                            <picture>
+                                <source srcset="chanel${i}.webp" type="image/webp">
+                                <img src="chanel${i}.jpg" alt="Chanel ${i}">
+                            </picture>
                             <div class="product-info">
                                 <h3>${chanelModels[i-1]}</h3>
                                 <p class="price">${chanelPrices[i-1]} AZN</p>
-                                <a href="https://wa.me/12025550123?text=Salam,%20Chanel%20${chanelModels[i-1]}%20modeli%20ilə%20bağlı%20məlumat%20almaq%20istəyirəm" class="btn-order">
-                                    <i class="fab fa-whatsapp"></i> WhatsApp Sifariş
-                                </a>
+                                <a href="https://wa.me/12025550123?text=Salam,%20Chanel%20${chanelModels[i-1]}%20sifarişi" class="btn-order"><i class="fab fa-whatsapp"></i> WhatsApp Sifariş</a>
                             </div>
                         </div>
                     `);
@@ -91,13 +93,14 @@
                     document.write(`
                         <div class="product-card">
                             <div class="badge">Prada</div>
-                            <img src="prada${i}.jpg" alt="Prada ${i}">
+                            <picture>
+                                <source srcset="prada${i}.webp" type="image/webp">
+                                <img src="prada${i}.jpg" alt="Prada ${i}">
+                            </picture>
                             <div class="product-info">
                                 <h3>${pradaModels[i-1]}</h3>
                                 <p class="price">${pradaPrices[i-1]} AZN</p>
-                                <a href="https://wa.me/12025550123?text=Salam,%20Prada%20${pradaModels[i-1]}%20modeli%20ilə%20bağlı%20məlumat%20almaq%20istəyirəm" class="btn-order">
-                                    <i class="fab fa-whatsapp"></i> WhatsApp Sifariş
-                                </a>
+                                <a href="https://wa.me/12025550123?text=Salam,%20Prada%20${pradaModels[i-1]}%20sifarişi" class="btn-order"><i class="fab fa-whatsapp"></i> WhatsApp Sifariş</a>
                             </div>
                         </div>
                     `);
@@ -116,13 +119,14 @@
                     document.write(`
                         <div class="product-card">
                             <div class="badge">Hermès</div>
-                            <img src="hermes${i}.jpg" alt="Hermès ${i}">
+                            <picture>
+                                <source srcset="hermes${i}.webp" type="image/webp">
+                                <img src="hermes${i}.jpg" alt="Hermès ${i}">
+                            </picture>
                             <div class="product-info">
                                 <h3>${hermesModels[i-1]}</h3>
                                 <p class="price">${hermesPrices[i-1]} AZN</p>
-                                <a href="https://wa.me/12025550123?text=Salam,%20Hermès%20${hermesModels[i-1]}%20modeli%20ilə%20bağlı%20məlumat%20almaq%20istəyirəm" class="btn-order">
-                                    <i class="fab fa-whatsapp"></i> WhatsApp Sifariş
-                                </a>
+                                <a href="https://wa.me/12025550123?text=Salam,%20Hermès%20${hermesModels[i-1]}%20sifarişi" class="btn-order"><i class="fab fa-whatsapp"></i> WhatsApp Sifariş</a>
                             </div>
                         </div>
                     `);
@@ -137,19 +141,16 @@
     <h2 style="color: #f6eaac;">Haqqımızda</h2>
     <p style="font-size: 1.2rem; line-height: 1.8;">
         Brend Çanta Qalereyası olaraq biz dünya şöhrətli brendlərin ən nadir və eksklüziv modellərini sizin üçün bir araya gətiririk. 
-        Məqsədimiz orijinallıq və zərifliyi sevən müştərilərimizə premium xidmət təqdim etməkdir.
     </p>
 </section>
 
 <section id="contact" class="contact-section" style="text-align: center; padding: 40px; border-top: 1px solid #1f2833;">
     <h2 style="color: #f6eaac;">Əlaqə</h2>
-    <p>Sualınız var? Bizimlə birbaşa əlaqə saxlayın:</p>
     <p style="font-size: 1.5rem; color: #f6eaac;"><i class="fab fa-whatsapp"></i> +1 202 555 0123</p>
-    <p>Email: boutique@luxurybags.com</p>
 </section>
 
 <footer>
-    <p>© 2026 Brend Çanta Qalereyası | Lüks butik təcrübəsi</p>
+    <p>© 2026 Brend Çanta Qalereyası</p>
 </footer>
 
 </body>
