@@ -7,19 +7,21 @@
     <style>
         body { background: #0b0c10; color: #c5c6c7; font-family: 'Georgia', serif; margin: 0; padding: 0; text-align: center; scroll-behavior: smooth; }
         .navbar { background: #1f2833; padding: 15px; border-bottom: 2px solid #d4af37; position: sticky; top: 0; z-index: 100; display: flex; justify-content: center; gap: 20px; }
-        .navbar a { color: #d4af37; text-decoration: none; font-weight: bold; text-transform: uppercase; font-size: 14px; }
-        header { padding: 80px 20px; color: #f6eaac; border-bottom: 1px solid #1f2833; }
-        header h1 { font-size: 2.5rem; margin-bottom: 10px; }
+        .navbar a { color: #d4af37; text-decoration: none; font-weight: bold; text-transform: uppercase; font-size: 14px; transition: 0.3s; }
+        .navbar a:hover { color: #fff; }
+        header { padding: 80px 20px; color: #f6eaac; }
+        header h1 { font-size: 2.5rem; margin-bottom: 10px; letter-spacing: 3px; }
         .divider { width: 80px; height: 2px; background: #d4af37; margin: 0 auto 20px; }
+        .section-title { color: #d4af37; font-size: 2.2rem; letter-spacing: 5px; margin-top: 60px; text-transform: uppercase; border-bottom: 1px solid #1f2833; display: inline-block; padding-bottom: 10px; }
         .products-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 25px; padding: 40px 20px; max-width: 1300px; margin: auto; }
         .product-card { background: #1f2833; border: 1px solid #45a29e; border-radius: 12px; width: 280px; padding-bottom: 25px; overflow: hidden; transition: 0.4s; }
         .product-card:hover { border-color: #d4af37; transform: translateY(-10px); box-shadow: 0 10px 20px rgba(0,0,0,0.5); }
-        .product-card img { width: 100%; height: 300px; object-fit: cover; background: #2c3531; }
-        .product-info h3 { color: #fff; font-size: 1.2rem; margin: 20px 0 10px; }
+        .product-card img { width: 100%; height: 300px; object-fit: cover; background: #2c3531; display: block; }
+        .product-info h3 { color: #fff; font-size: 1.1rem; margin: 20px 0 10px; height: 40px; display: flex; align-items: center; justify-content: center; padding: 0 10px; }
         .price { color: #d4af37; font-size: 1.2rem; font-weight: bold; margin-bottom: 20px; }
         .btn-order { background: transparent; color: #d4af37; padding: 10px 20px; text-decoration: none; border: 1px solid #d4af37; border-radius: 5px; font-weight: bold; transition: 0.3s; }
         .btn-order:hover { background: #d4af37; color: #0b0c10; }
-        h2.section-title { color: #d4af37; font-size: 2.5rem; letter-spacing: 5px; margin-top: 60px; text-transform: uppercase; }
+        footer { padding: 50px; background: #1f2833; border-top: 1px solid #d4af37; margin-top: 50px; }
     </style>
 </head>
 <body>
@@ -29,49 +31,49 @@
 </nav>
 
 <header>
-    <h1>Eksklüziv Çanta Qalereyası</h1>
+    <h1>Eksklüziv Çanta Kolleksiyası</h1>
     <div class="divider"></div>
     <p>Zəriflik, keyfiyyət və prestij bir ünvanda</p>
 </header>
 
 <h2 id="gucci" class="section-title">GUCCI</h2>
 <div class="products-grid">
-    <div class="product-card"><img src="gucci1.jpg" onerror="this.src='gucci1.webp'"><h3>Marmont Shoulder</h3><p class="price">5200 AZN</p><a href="https://wa.me/12025550123" class="btn-order">Sifariş</a></div>
-    <div class="product-card"><img src="gucci2.jpg" onerror="this.src='gucci2.webp'"><h3>Dionysus GG</h3><p class="price">4800 AZN</p><a href="https://wa.me/12025550123" class="btn-order">Sifariş</a></div>
-    <div class="product-card"><img src="gucci3.jpg" onerror="this.src='gucci3.webp'"><h3>Jackie 1961</h3><p class="price">6100 AZN</p><a href="https://wa.me/12025550123" class="btn-order">Sifariş</a></div>
-    <div class="product-card"><img src="gucci4.jpg" onerror="this.src='gucci4.webp'"><h3>Horsebit 1955</h3><p class="price">3900 AZN</p><a href="https://wa.me/12025550123" class="btn-order">Sifariş</a></div>
-    <div class="product-card"><img src="gucci5.jpg" onerror="this.src='gucci5.webp'"><h3>Ophidia Tote</h3><p class="price">5500 AZN</p><a href="https://wa.me/12025550123" class="btn-order">Sifariş</a></div>
+    <div class="product-card"><img src="Downloads/gucci1.jpg" onerror="this.src='Downloads/gucci1.webp'"><h3>Marmont Shoulder</h3><p class="price">5200 AZN</p><a href="https://wa.me/12025550123" class="btn-order">Sifariş</a></div>
+    <div class="product-card"><img src="Downloads/gucci2.jpg" onerror="this.src='Downloads/gucci2.webp'"><h3>Dionysus GG</h3><p class="price">4800 AZN</p><a href="https://wa.me/12025550123" class="btn-order">Sifariş</a></div>
+    <div class="product-card"><img src="Downloads/gucci3.jpg" onerror="this.src='Downloads/gucci3.webp'"><h3>Jackie 1961</h3><p class="price">6100 AZN</p><a href="https://wa.me/12025550123" class="btn-order">Sifariş</a></div>
+    <div class="product-card"><img src="Downloads/gucci4.jpg" onerror="this.src='Downloads/gucci4.webp'"><h3>Horsebit 1955</h3><p class="price">3900 AZN</p><a href="https://wa.me/12025550123" class="btn-order">Sifariş</a></div>
+    <div class="product-card"><img src="Downloads/gucci5.jpg" onerror="this.src='Downloads/gucci5.webp'"><h3>Ophidia Tote</h3><p class="price">5500 AZN</p><a href="https://wa.me/12025550123" class="btn-order">Sifariş</a></div>
 </div>
 
 <h2 id="chanel" class="section-title">CHANEL</h2>
 <div class="products-grid">
-    <div class="product-card"><img src="chanel1.jpg" onerror="this.src='chanel1.webp'"><h3>Classic Flap Bag</h3><p class="price">8500 AZN</p><a href="https://wa.me/12025550123" class="btn-order">Sifariş</a></div>
-    <div class="product-card"><img src="chanel2.jpg" onerror="this.src='chanel2.webp'"><h3>Chanel 22 Large</h3><p class="price">9200 AZN</p><a href="https://wa.me/12025550123" class="btn-order">Sifariş</a></div>
-    <div class="product-card"><img src="chanel3.jpg" onerror="this.src='chanel3.webp'"><h3>Boy Chanel</h3><p class="price">7800 AZN</p><a href="https://wa.me/12025550123" class="btn-order">Sifariş</a></div>
-    <div class="product-card"><img src="chanel4.jpg" onerror="this.src='chanel4.webp'"><h3>Coco Handle</h3><p class="price">11000 AZN</p><a href="https://wa.me/12025550123" class="btn-order">Sifariş</a></div>
-    <div class="product-card"><img src="chanel5.jpg" onerror="this.src='chanel5.webp'"><h3>Chanel 19</h3><p class="price">8900 AZN</p><a href="https://wa.me/12025550123" class="btn-order">Sifariş</a></div>
+    <div class="product-card"><img src="Downloads/chanel1.jpg" onerror="this.src='Downloads/chanel1.webp'"><h3>Classic Flap Bag</h3><p class="price">8500 AZN</p><a href="https://wa.me/12025550123" class="btn-order">Sifariş</a></div>
+    <div class="product-card"><img src="Downloads/chanel2.jpg" onerror="this.src='Downloads/chanel2.webp'"><h3>Chanel 22 Large</h3><p class="price">9200 AZN</p><a href="https://wa.me/12025550123" class="btn-order">Sifariş</a></div>
+    <div class="product-card"><img src="Downloads/chanel3.jpg" onerror="this.src='Downloads/chanel3.webp'"><h3>Boy Chanel</h3><p class="price">7800 AZN</p><a href="https://wa.me/12025550123" class="btn-order">Sifariş</a></div>
+    <div class="product-card"><img src="Downloads/chanel4.jpg" onerror="this.src='Downloads/chanel4.webp'"><h3>Coco Handle</h3><p class="price">11000 AZN</p><a href="https://wa.me/12025550123" class="btn-order">Sifariş</a></div>
+    <div class="product-card"><img src="Downloads/chanel5.jpg" onerror="this.src='Downloads/chanel5.webp'"><h3>Chanel 19</h3><p class="price">8900 AZN</p><a href="https://wa.me/12025550123" class="btn-order">Sifariş</a></div>
 </div>
 
 <h2 id="prada" class="section-title">PRADA</h2>
 <div class="products-grid">
-    <div class="product-card"><img src="prada1.jpg" onerror="this.src='prada1.webp'"><h3>Prada Galleria</h3><p class="price">4200 AZN</p><a href="https://wa.me/12025550123" class="btn-order">Sifariş</a></div>
-    <div class="product-card"><img src="prada2.jpg" onerror="this.src='prada2.webp'"><h3>Re-Edition 2005</h3><p class="price">5600 AZN</p><a href="https://wa.me/12025550123" class="btn-order">Sifariş</a></div>
-    <div class="product-card"><img src="prada3.jpg" onerror="this.src='prada3.webp'"><h3>Prada Cleo</h3><p class="price">3800 AZN</p><a href="https://wa.me/12025550123" class="btn-order">Sifariş</a></div>
-    <div class="product-card"><img src="prada4.jpg" onerror="this.src='prada4.webp'"><h3>Saffiano Lux</h3><p class="price">4900 AZN</p><a href="https://wa.me/12025550123" class="btn-order">Sifariş</a></div>
-    <div class="product-card"><img src="prada5.jpg" onerror="this.src='prada5.webp'"><h3>Prada Moon</h3><p class="price">6200 AZN</p><a href="https://wa.me/12025550123" class="btn-order">Sifariş</a></div>
+    <div class="product-card"><img src="Downloads/prada1.jpg" onerror="this.src='Downloads/prada1.webp'"><h3>Prada Galleria</h3><p class="price">4200 AZN</p><a href="https://wa.me/12025550123" class="btn-order">Sifariş</a></div>
+    <div class="product-card"><img src="Downloads/prada2.jpg" onerror="this.src='Downloads/prada2.webp'"><h3>Re-Edition 2005</h3><p class="price">5600 AZN</p><a href="https://wa.me/12025550123" class="btn-order">Sifariş</a></div>
+    <div class="product-card"><img src="Downloads/prada3.jpg" onerror="this.src='Downloads/prada3.webp'"><h3>Prada Cleo</h3><p class="price">3800 AZN</p><a href="https://wa.me/12025550123" class="btn-order">Sifariş</a></div>
+    <div class="product-card"><img src="Downloads/prada4.jpg" onerror="this.src='Downloads/prada4.webp'"><h3>Saffiano Lux</h3><p class="price">4900 AZN</p><a href="https://wa.me/12025550123" class="btn-order">Sifariş</a></div>
+    <div class="product-card"><img src="Downloads/prada5.jpg" onerror="this.src='Downloads/prada5.webp'"><h3>Prada Moon</h3><p class="price">6200 AZN</p><a href="https://wa.me/12025550123" class="btn-order">Sifariş</a></div>
 </div>
 
 <h2 id="hermes" class="section-title">HERMES</h2>
 <div class="products-grid">
-    <div class="product-card"><img src="hermes1.jpg" onerror="this.src='hermes1.webp'"><h3>Birkin 30 Gold</h3><p class="price">15800 AZN</p><a href="https://wa.me/12025550123" class="btn-order">Sifariş</a></div>
-    <div class="product-card"><img src="hermes2.jpg" onerror="this.src='hermes2.webp'"><h3>Kelly 28 Epsom</h3><p class="price">18500 AZN</p><a href="https://wa.me/12025550123" class="btn-order">Sifariş</a></div>
-    <div class="product-card"><img src="hermes3.jpg" onerror="this.src='hermes3.webp'"><h3>Constance 18</h3><p class="price">12000 AZN</p><a href="https://wa.me/12025550123" class="btn-order">Sifariş</a></div>
-    <div class="product-card"><img src="hermes4.jpg" onerror="this.src='hermes4.webp'"><h3>Evelyne III</h3><p class="price">14200 AZN</p><a href="https://wa.me/12025550123" class="btn-order">Sifariş</a></div>
-    <div class="product-card"><img src="hermes5.jpg" onerror="this.src='hermes5.webp'"><h3>Lindy 26</h3><p class="price">25000 AZN</p><a href="https://wa.me/12025550123" class="btn-order">Sifariş</a></div>
+    <div class="product-card"><img src="Downloads/hermes1.jpg" onerror="this.src='Downloads/hermes1.webp'"><h3>Birkin 30 Gold</h3><p class="price">15800 AZN</p><a href="https://wa.me/12025550123" class="btn-order">Sifariş</a></div>
+    <div class="product-card"><img src="Downloads/hermes2.jpg" onerror="this.src='Downloads/hermes2.webp'"><h3>Kelly 28 Epsom</h3><p class="price">18500 AZN</p><a href="https://wa.me/12025550123" class="btn-order">Sifariş</a></div>
+    <div class="product-card"><img src="Downloads/hermes3.jpg" onerror="this.src='Downloads/hermes3.webp'"><h3>Constance 18</h3><p class="price">12000 AZN</p><a href="https://wa.me/12025550123" class="btn-order">Sifariş</a></div>
+    <div class="product-card"><img src="Downloads/hermes4.jpg" onerror="this.src='Downloads/hermes4.webp'"><h3>Evelyne III</h3><p class="price">14200 AZN</p><a href="https://wa.me/12025550123" class="btn-order">Sifariş</a></div>
+    <div class="product-card"><img src="Downloads/hermes5.jpg" onerror="this.src='Downloads/hermes5.webp'"><h3>Lindy 26</h3><p class="price">25000 AZN</p><a href="https://wa.me/12025550123" class="btn-order">Sifariş</a></div>
 </div>
 
-<footer style="padding: 50px; background: #1f2833; border-top: 1px solid #d4af37; margin-top: 50px;">
-    <p>© 2026 Luxury Boutique | Bütün hüquqlar qorunur.</p>
+<footer>
+    <p>© 2026 Luxury Boutique | Prestij bir ünvanda.</p>
 </footer>
 
 </body>
