@@ -1,122 +1,92 @@
-/* style.css - Bütün dizayn buradadır */
-body { 
-    background: #0b0c10; 
-    color: #c5c6c7; 
-    font-family: 'Georgia', serif; 
-    margin: 0; 
-    padding: 0; 
-    text-align: center; 
-    scroll-behavior: smooth; 
+body {
+    background: #0b0c10;
+    color: #c5c6c7;
+    font-family: 'Georgia', serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
 }
 
-.navbar { 
-    background: #1f2833; 
-    padding: 20px; 
-    border-bottom: 2px solid #d4af37; 
-    position: sticky; 
-    top: 0; 
-    z-index: 1000; 
-    display: flex; 
-    justify-content: center; 
-    gap: 20px; 
+/* HEADER */
+header {
+    padding: 60px 20px;
+    color: #f6eaac;
 }
 
-.navbar a { 
-    color: #d4af37; 
-    text-decoration: none; 
-    font-weight: bold; 
-    text-transform: uppercase; 
-    font-size: 14px; 
-    transition: 0.3s;
-}
-
-.navbar a:hover {
-    color: #ffffff;
-}
-
-header { 
-    padding: 80px 20px; 
-    color: #f6eaac; 
-}
-
-header h1 { 
-    font-size: 2.8rem; 
-    margin: 0; 
+header h1 {
+    font-size: 2.8rem;
+    margin: 0;
     letter-spacing: 3px;
 }
 
-.divider { 
-    width: 80px; 
-    height: 2px; 
-    background: #d4af37; 
-    margin: 20px auto; 
+/* SECTION TITLE */
+h2 {
+    color: #d4af37;
+    font-size: 2.2rem;
+    margin-top: 60px;
 }
 
-.section-title { 
-    color: #d4af37; 
-    font-size: 2.5rem; 
-    letter-spacing: 5px; 
-    margin: 60px 0 30px; 
-    text-transform: uppercase; 
+/* PRODUCT BOX */
+.product {
+    background: #1f2833;
+    border: 1px solid #45a29e;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 20px;
+    transition: 0.3s;
 }
 
-.products-grid { 
-    display: flex; 
-    flex-wrap: wrap; 
-    justify-content: center; 
-    gap: 30px; 
-    padding: 20px; 
-    max-width: 1400px; 
-    margin: auto; 
+.product:hover {
+    border-color: #d4af37;
+    transform: translateY(-5px);
 }
 
-.product-card { 
-    background: #1f2833; 
-    border: 1px solid #45a29e; 
-    border-radius: 12px; 
-    width: 280px; 
-    padding-bottom: 25px; 
-    overflow: hidden; 
-    transition: 0.4s; 
+/* IMAGES */
+.product img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    margin: 5px;
+    border-radius: 10px;
+    display: inline-block;
 }
 
-.product-card:hover { 
-    border-color: #d4af37; 
-    transform: translateY(-10px); 
+/* TITLE INSIDE PRODUCT */
+.product h3 {
+    color: #ffffff;
+    margin-bottom: 10px;
 }
 
-.product-card img { 
-    width: 100%; 
-    height: 300px; 
-    object-fit: cover; 
-    background: #2c3531; 
+/* PRICE */
+.product p {
+    color: #d4af37;
+    font-size: 1.2rem;
+    font-weight: bold;
 }
 
-.product-info h3 { 
-    color: #fff; 
-    font-size: 1.2rem; 
-    margin: 20px 0 10px; 
+/* BUTTON */
+.btn, .whatsapp {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: 1px solid #d4af37;
+    color: #d4af37;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
 }
 
-.price { 
-    color: #d4af37; 
-    font-size: 1.2rem; 
-    font-weight: bold; 
-    margin-bottom: 20px; 
+.btn:hover, .whatsapp:hover {
+    background: #d4af37;
+    color: #0b0c10;
 }
 
-.btn-order { 
-    background: transparent; 
-    color: #d4af37; 
-    padding: 10px 20px; 
-    text-decoration: none; 
-    border: 1px solid #d4af37; 
-    border-radius: 5px; 
-    font-weight: bold; 
-    transition: 0.3s; 
-}
-
-.btn-order:hover { 
-    background: #d4af37; 
-    color: #0b0c10; 
+/* FOOTER */
+footer {
+    margin-top: 50px;
+    padding: 20px;
+    background: #1f2833;
+    color: #c5c6c7;
 }
