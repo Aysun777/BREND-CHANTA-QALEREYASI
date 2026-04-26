@@ -2,31 +2,49 @@
 <html lang="az">
 <head>
 <meta charset="UTF-8">
-<title>Brend Çanta Shop</title>
+<title>BÇQ - Brend Çanta Qalereyası</title>
 <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header>
-    <h1>Brend Çanta Shop</h1>
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="logo">BÇQ</div>
 
-    <!-- SEARCH -->
-    <input type="text" id="searchInput" placeholder="Axtar..." onkeyup="searchProducts()">
+    <a href="#home">Ana səhifə</a>
+    <a href="#gucci">Gucci</a>
+    <a href="#chanel">Chanel</a>
+    <a href="#prada">Prada</a>
+    <a href="#hermes">Hermes</a>
+    <a href="#about">Haqqımızda</a>
+</nav>
 
-    <!-- CART -->
-    <div class="cart">
-        🛒 Səbət: <span id="cartCount">0</span>
-    </div>
+<!-- HOME / HEADER -->
+<header id="home">
+
+<h1>Brend Çanta Qalereyası</h1>
+
+<p style="color:#d4af37; font-size:18px; margin-top:10px;">
+Zəriflik, Keyfiyyət və Prestij bir ünvanda
+</p>
+
+<!-- SEARCH -->
+<input type="text" id="searchInput" placeholder="Məhsul axtar..." onkeyup="searchProducts()">
+
+<!-- CART -->
+<div class="cart">
+🛒 Səbət: <span id="cartCount">0</span>
+</div>
+
 </header>
 
-<section>
-
+<!-- GUCCI -->
+<section id="gucci">
 <h2>Gucci</h2>
 
-<div class="products-grid" id="productList">
+<div class="products-grid">
 
-<!-- PRODUCT 1 -->
 <div class="product-card">
     <img src="images/gucci1.jpg">
     <h3>Gucci Marmont</h3>
@@ -34,7 +52,6 @@
     <button onclick="addToCart()">Səbətə at</button>
 </div>
 
-<!-- PRODUCT 2 -->
 <div class="product-card">
     <img src="images/gucci2.jpg">
     <h3>Gucci Dionysus</h3>
@@ -42,46 +59,83 @@
     <button onclick="addToCart()">Səbətə at</button>
 </div>
 
-<!-- Chanel -->
+</div>
+</section>
+
+<!-- CHANEL -->
+<section id="chanel">
+<h2>Chanel</h2>
+
+<div class="products-grid">
+
 <div class="product-card">
     <img src="images/chanel1.jpg">
-    <h3>Chanel Classic</h3>
+    <h3>Chanel Classic Flap</h3>
     <p class="price">9000 AZN</p>
+    <button onclick="addToCart()">Səbətə at</button>
+</div>
+
+<div class="product-card">
+    <img src="images/chanel2.jpg">
+    <h3>Chanel Mini Bag</h3>
+    <p class="price">8500 AZN</p>
     <button onclick="addToCart()">Səbətə at</button>
 </div>
 
 </div>
 </section>
 
+<!-- PRADA -->
+<section id="prada">
+<h2>Prada</h2>
+
+<div class="products-grid">
+
+<div class="product-card">
+    <img src="images/prada1.jpg">
+    <h3>Prada Galleria</h3>
+    <p class="price">7000 AZN</p>
+    <button onclick="addToCart()">Səbətə at</button>
+</div>
+
+</div>
+</section>
+
+<!-- HERMES -->
+<section id="hermes">
+<h2>Hermes</h2>
+
+<div class="products-grid">
+
+<div class="product-card">
+    <img src="images/hermes1.jpg">
+    <h3>Hermes Birkin</h3>
+    <p class="price">18000 AZN</p>
+    <button onclick="addToCart()">Səbətə at</button>
+</div>
+
+</div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+
+<h2>Haqqımızda</h2>
+
+<p style="max-width:800px; margin:auto; line-height:1.6;">
+Brend Çanta Qalereyası olaraq biz dünya şöhrətli brendlərin ən nadir və eksklüziv modellərini sizin üçün bir araya gətiririk.
+Hər bir məhsul keyfiyyət, zəriflik və prestijin simvoludur. Məqsədimiz müştərilərimizə yalnız bir məhsul deyil, eyni zamanda lüks həyat tərzi təqdim etməkdir.
+</p>
+
+</section>
+
+<!-- FOOTER -->
 <footer>
-<p>© 2026 Shop</p>
+<p>© 2026 BÇQ - Brend Çanta Qalereyası</p>
 </footer>
 
-<script>
-let cart = 0;
-
-// CART FUNCTION
-function addToCart() {
-    cart++;
-    document.getElementById("cartCount").innerText = cart;
-}
-
-// SEARCH FUNCTION
-function searchProducts() {
-    let input = document.getElementById("searchInput").value.toLowerCase();
-    let products = document.querySelectorAll(".product-card");
-
-    products.forEach(product => {
-        let name = product.querySelector("h3").innerText.toLowerCase();
-
-        if (name.includes(input)) {
-            product.style.display = "block";
-        } else {
-            product.style.display = "none";
-        }
-    });
-}
-</script>
+<!-- JS -->
+<script src="script.js"></script>
 
 </body>
 </html>
