@@ -2,7 +2,7 @@
 <html lang="az">
 <head>
 <meta charset="UTF-8">
-<title>BÇQ - Brend Çanta Qalereyası</title>
+<title>BÇQ Shop</title>
 <link rel="stylesheet" href="style.css">
 </head>
 
@@ -11,7 +11,6 @@
 <!-- NAVBAR -->
 <nav class="navbar">
     <div class="logo">BÇQ</div>
-
     <a href="#home">Ana səhifə</a>
     <a href="#gucci">Gucci</a>
     <a href="#chanel">Chanel</a>
@@ -20,23 +19,17 @@
     <a href="#about">Haqqımızda</a>
 </nav>
 
-<!-- HOME / HEADER -->
+<!-- HEADER -->
 <header id="home">
+    <h1>Brend Çanta Qalereyası</h1>
 
-<h1>Brend Çanta Qalereyası</h1>
+    <p>Zəriflik, Keyfiyyət və Prestij bir ünvanda</p>
 
-<p style="color:#d4af37; font-size:18px; margin-top:10px;">
-Zəriflik, Keyfiyyət və Prestij bir ünvanda
-</p>
+    <input type="text" id="searchInput" placeholder="Axtar..." onkeyup="searchProducts()">
 
-<!-- SEARCH -->
-<input type="text" id="searchInput" placeholder="Məhsul axtar..." onkeyup="searchProducts()">
-
-<!-- CART -->
-<div class="cart">
-🛒 Səbət: <span id="cartCount">0</span>
-</div>
-
+    <div class="cart">
+        🛒 Səbət: <span id="cartCount">0</span>
+    </div>
 </header>
 
 <!-- GUCCI -->
@@ -70,15 +63,8 @@ Zəriflik, Keyfiyyət və Prestij bir ünvanda
 
 <div class="product-card">
     <img src="images/chanel1.jpg">
-    <h3>Chanel Classic Flap</h3>
+    <h3>Chanel Classic</h3>
     <p class="price">9000 AZN</p>
-    <button onclick="addToCart()">Səbətə at</button>
-</div>
-
-<div class="product-card">
-    <img src="images/chanel2.jpg">
-    <h3>Chanel Mini Bag</h3>
-    <p class="price">8500 AZN</p>
     <button onclick="addToCart()">Səbətə at</button>
 </div>
 
@@ -93,7 +79,7 @@ Zəriflik, Keyfiyyət və Prestij bir ünvanda
 
 <div class="product-card">
     <img src="images/prada1.jpg">
-    <h3>Prada Galleria</h3>
+    <h3>Prada Bag</h3>
     <p class="price">7000 AZN</p>
     <button onclick="addToCart()">Səbətə at</button>
 </div>
@@ -119,22 +105,17 @@ Zəriflik, Keyfiyyət və Prestij bir ünvanda
 
 <!-- ABOUT -->
 <section id="about">
-
 <h2>Haqqımızda</h2>
 
 <p style="max-width:800px; margin:auto; line-height:1.6;">
-Brend Çanta Qalereyası olaraq biz dünya şöhrətli brendlərin ən nadir və eksklüziv modellərini sizin üçün bir araya gətiririk.
-Hər bir məhsul keyfiyyət, zəriflik və prestijin simvoludur. Məqsədimiz müştərilərimizə yalnız bir məhsul deyil, eyni zamanda lüks həyat tərzi təqdim etməkdir.
+Brend Çanta Qalereyası olaraq biz dünya şöhrətli brendlərin ən nadir və eksklüziv modellərini sizin üçün bir araya gətiririk. Məqsədimiz müştərilərə lüks və keyfiyyətli məhsullar təqdim etməkdir.
 </p>
-
 </section>
 
-<!-- FOOTER -->
 <footer>
-<p>© 2026 BÇQ - Brend Çanta Qalereyası</p>
+<p>© 2026 BÇQ</p>
 </footer>
 
-<!-- JS -->
 <script src="script.js"></script>
 
 </body>
