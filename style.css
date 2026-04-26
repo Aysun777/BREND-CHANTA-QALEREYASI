@@ -9,78 +9,107 @@ body {
 
 /* HEADER */
 header {
-    padding: 60px 20px;
-    color: #f6eaac;
+    padding: 40px 20px;
+    background: #1f2833;
+    border-bottom: 2px solid #d4af37;
 }
 
 header h1 {
-    font-size: 2.8rem;
     margin: 0;
-    letter-spacing: 3px;
+    color: #f6eaac;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+}
+
+/* SEARCH INPUT */
+input {
+    padding: 10px 15px;
+    width: 220px;
+    margin-top: 15px;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+}
+
+/* CART */
+.cart {
+    margin-top: 10px;
+    color: #d4af37;
+    font-weight: bold;
+    font-size: 18px;
 }
 
 /* SECTION TITLE */
 h2 {
     color: #d4af37;
-    font-size: 2.2rem;
-    margin-top: 60px;
+    margin-top: 50px;
+    font-size: 2rem;
 }
 
-/* PRODUCT BOX */
-.product {
+/* GRID */
+.products-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* PRODUCT CARD */
+.product-card {
     background: #1f2833;
     border: 1px solid #45a29e;
     border-radius: 12px;
-    width: 90%;
-    max-width: 1000px;
-    margin: 30px auto;
-    padding: 20px;
+    width: 260px;
+    overflow: hidden;
     transition: 0.3s;
 }
 
-.product:hover {
+.product-card:hover {
+    transform: scale(1.05);
     border-color: #d4af37;
-    transform: translateY(-5px);
 }
 
-/* IMAGES */
-.product img {
-    width: 180px;
-    height: 180px;
+/* IMAGE */
+.product-card img {
+    width: 100%;
+    height: 250px;
     object-fit: cover;
-    margin: 5px;
-    border-radius: 10px;
-    display: inline-block;
+    transition: 0.3s;
 }
 
-/* TITLE INSIDE PRODUCT */
-.product h3 {
-    color: #ffffff;
-    margin-bottom: 10px;
+.product-card img:hover {
+    transform: scale(1.1);
+}
+
+/* TITLE */
+.product-card h3 {
+    color: #fff;
+    margin: 10px 0;
 }
 
 /* PRICE */
-.product p {
+.price {
     color: #d4af37;
     font-size: 1.2rem;
     font-weight: bold;
 }
 
 /* BUTTON */
-.btn, .whatsapp {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 10px 20px;
+button {
+    background: transparent;
     border: 1px solid #d4af37;
     color: #d4af37;
-    text-decoration: none;
-    border-radius: 5px;
+    padding: 8px 12px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    cursor: pointer;
     transition: 0.3s;
 }
 
-.btn:hover, .whatsapp:hover {
+button:hover {
     background: #d4af37;
-    color: #0b0c10;
+    color: black;
 }
 
 /* FOOTER */
