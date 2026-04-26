@@ -1,3 +1,4 @@
+/* ÜMUMİ AYARLAR */
 body {
     background: #0b0c10;
     color: #c5c6c7;
@@ -17,60 +18,103 @@ header h1 {
     font-size: 2.8rem;
     margin: 0;
     letter-spacing: 3px;
+    text-transform: uppercase;
 }
 
-/* SECTION TITLE */
-h2 {
+header p {
+    font-style: italic;
+    font-size: 1.1rem;
+    color: #f6eaac;
+    opacity: 0.8;
+}
+
+/* BRENDLƏRİMİZ BÖLMƏSİ (Şəkildəki göy blok) */
+.brands-section {
+    background: #1f2833;
+    width: 95%;
+    max-width: 1100px;
+    margin: 20px auto;
+    padding: 40px 20px;
+    border-radius: 15px;
+}
+
+.brands-section h2 {
     color: #d4af37;
-    font-size: 2.2rem;
-    margin-top: 60px;
+    font-size: 1.8rem;
+    margin-top: 0;
+    margin-bottom: 30px;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.brands-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.brand-item a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: normal;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #ffffff; /* Şəkildəki kimi ağ/açıq rəngli alt xətt */
+    transition: 0.3s;
+}
+
+.brand-item a:hover {
+    color: #d4af37;
+    border-bottom-color: #d4af37;
+}
+
+/* MƏHSULLAR BÖLMƏSİ */
+.products-section {
+    background: #1f2833;
+    width: 95%;
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 30px 20px;
+    border-radius: 15px;
+    text-align: left;
+}
+
+.products-section h2 {
+    color: #d4af37;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    text-transform: uppercase;
 }
 
 /* PRODUCT BOX */
 .product {
-    background: #1f2833;
-    border: 1px solid #45a29e;
-    border-radius: 12px;
-    width: 90%;
-    max-width: 1000px;
-    margin: 30px auto;
-    padding: 20px;
-    transition: 0.3s;
+    background: transparent;
+    padding: 10px;
 }
 
-.product:hover {
-    border-color: #d4af37;
-    transform: translateY(-5px);
-}
-
-/* IMAGES */
+/* Şəkildəki ağ küncləri olan məhsul şəkli */
 .product img {
-    width: 180px;
-    height: 180px;
+    width: 220px;
+    height: 250px;
     object-fit: cover;
-    margin: 5px;
-    border-radius: 10px;
-    display: inline-block;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-/* TITLE INSIDE PRODUCT */
-.product h3 {
-    color: #ffffff;
-    margin-bottom: 10px;
-}
-
-/* PRICE */
+/* QİYMƏT VƏ DÜYMƏ */
 .product p {
     color: #d4af37;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     font-weight: bold;
+    margin: 15px 0;
 }
 
-/* BUTTON */
-.btn, .whatsapp {
+.btn {
     display: inline-block;
-    margin-top: 10px;
-    padding: 10px 20px;
+    padding: 10px 25px;
     border: 1px solid #d4af37;
     color: #d4af37;
     text-decoration: none;
@@ -78,7 +122,7 @@ h2 {
     transition: 0.3s;
 }
 
-.btn:hover, .whatsapp:hover {
+.btn:hover {
     background: #d4af37;
     color: #0b0c10;
 }
@@ -86,7 +130,8 @@ h2 {
 /* FOOTER */
 footer {
     margin-top: 50px;
-    padding: 20px;
+    padding: 30px;
     background: #1f2833;
     color: #c5c6c7;
+    font-size: 0.9rem;
 }
